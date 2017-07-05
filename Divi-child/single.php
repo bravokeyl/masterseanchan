@@ -8,9 +8,9 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 
 ?>
 
-<div id="main-content"> 
+<div id="main-content">
 	<div class="container">
- 
+
 		<div id="content-area" class="clearfix">
 			<div id="left-area">
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -122,9 +122,12 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 					<?php if (et_get_option('divi_integration_single_bottom') <> '' && et_get_option('divi_integrate_singlebottom_enable') == 'on') echo(et_get_option('divi_integration_single_bottom')); ?>
 
 					<?php
+						global $post;
+						print_r($post->comment_status);
 						if ( ( comments_open() || get_comments_number() ) && 'on' == et_get_option( 'divi_show_postcomments', 'on' ) ) {
 							comments_template( '', true );
 						}
+						print_r(comments_open());
 					?>
 					</div> <!-- .et_post_meta_wrapper -->
 				</article> <!-- .et_pb_post -->
