@@ -17,3 +17,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 .bk-top-post-wrap {
   text-align: center;
 }
+@media only screen and (max-width: 480px) {
+  .comment-respond .form-submit {
+    float: none;
+  }
+  .comment-respond .form-submit .et_pb_button {
+    margin: 0 auto;
+  }
+  .comment-subscription-form {
+    text-align: left;
+  }
+}
