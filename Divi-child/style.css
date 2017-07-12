@@ -10,3 +10,10 @@ Tags: responsive-layout, one-column, two-columns, three-columns, four-columns, l
 License: GNU General Public License v2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+
+.et_post_meta_wrapper {
+   margin-bottom: 30px;
+}
+.bk-top-post-wrap {
+  text-align: center;
+}
